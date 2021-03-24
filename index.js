@@ -5,32 +5,41 @@ var arr = [];
   //a string to the first index
   //a boolean to the second index
   //a number to the fourth index
-[10, 20, 30, 40, 50]
-["spam", "bungee", "swallow"]
-(2, 4, 6, 8)
-("two", "four", "six", "eight")
-[("cheese", "queso"), ("red", "rojo"), ("school", "escuela")]
+
+//String
+firstLetterofLastName = firstName['J']
+//Boolean
+firstLetterofLastName = firstName(J){
+  [true]
+}
+//Number
+123 // one-hundred twenty-three
 
 
 //When you console.log the third and fourth indices 
 //what is the value?
-let arr = new Array(element0, element1, ..., elementN)
-let arr = Array(element0, element1, ..., elementN)
-let arr = [element0, element1, ..., elementN]
+var obj = {
+0: 1,
+1: 2,
+'jamar': 'smart', 
+'': 'empty string'
+};
+
+console.log(obj[0], obj[1], obj['jamar'], obj['']);
 
 //What is the length of the array?
-length is a property of arrays in JavaScript that returns or sets the number of elements in a given array. The length property of an array can be returned like so. The assignment operator, in conjunction with the length property, can be used to set the number of elements in an array like so.
+4
 
 //Use the push method to insert a string of your favorite tv show.
-const tv shows = ['blacklist', 'lucifer', 'flash'];
+const tvShows = ['blacklist', 'lucifer', 'flash'];
 
-const count = tv shows.push('arrow');
+const count = tvShows.push('arrow');
 console.log(count);
 // expected output: 4
 console.log(tv shows);
 // expected output: Array ["blacklist", "lucifer", "flash", "arrow"]
 
-animals.push('prodigal son', 'inhumans', 'runaways');
+tvShows.push('prodigal son', 'inhumans', 'runaways');
 console.log(tv shows);
 // expected output: Array ["blacklist", "lucifer", "flash", "arrow", "prodigal son", "inhumans", "runaways"]
 
@@ -67,11 +76,14 @@ nextNum(100) => 101
 
 function nextNum(number){
   //CODE BELOW HERE
-int invert(int x) 
-{ 
-   if (x == 1) return 2; 
-   else return 1; 
-} 
+{
+        int rev_num = 0;
+        while (num > 0) {
+            rev_num = rev_num * 10 + num % 10;
+            num = num / 10;
+        }
+        return rev_num;
+    }
 
 
   //CODE ABOVE HERE
@@ -93,14 +105,12 @@ EXAMPLE:
 
 function countVowels(string){
   //CODE BELOW HERE
-int countVowels(string str) 
-{ 
-    int count = 0; 
-    for (int i=0; i<str.length(); i++) 
-        if (isVowel(str[i])) // Check for vowel 
-            ++count; 
-    return count; 
-} 
+  counter <- 0
+  for (i in phrase) {
+    if ((i == 'a') | (i == 'e') | (i == 'i') | (i == 'o') | (i == 'u')) {
+      counter <- counter + 1 
+    }   
+  }
 
   //CODE ABOVE HERE
 }
@@ -120,12 +130,11 @@ evenIndicies(otherArray) => false
 
 function evenIndicies(array){
   //CODE BELOW HERE
-int[] res = {0,0};
-    int len = array.length;
-
-    if(array == null){
-        return res;
-    }
+for (int i = 0; i < array.length; i++) {
+  if (i % 2 == 0) {
+  System.out.print(array[i]);
+  }
+}
 
   //CODE ABOVE HERE
 }
